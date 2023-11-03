@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: Exo;
-    src: url('../../public/fonts/OFT/Exo2.0-Medium.otf');
+    src: url('../../../public/fonts/OFT/Exo2.0-Medium.otf');
 }
 
 .main {

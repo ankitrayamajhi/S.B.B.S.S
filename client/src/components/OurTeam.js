@@ -1,5 +1,5 @@
 import React from 'react';
-import './OurTeamStyle.css';
+import '../assets/css/OurTeamStyle.css';
 
 const staffData = [
   {
