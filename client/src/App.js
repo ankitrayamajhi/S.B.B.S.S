@@ -1,5 +1,16 @@
-function App(){
-    return <h1>Hello Nepal</h1>
-   }
+import React from 'react';
+import Navbar from './components/Navbar';
+import OurTeam from './components/OurTeam';
+import Footer from './components/Footer';
 
-   export default App;
+function App() {
+  return (
+    <div className="App">
+    <Navbar/>
+    <OurTeam/>
+    <Footer/>
+    </div>
+  );
+}
+
+export default App;

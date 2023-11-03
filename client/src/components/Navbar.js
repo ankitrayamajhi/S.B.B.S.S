@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../images/logo.png';
+import logo from '../assets/logo.png';
 import './NavbarStyle.css';
 
 class Navbar extends Component {
@@ -12,10 +12,10 @@ handleClick = () =>{
       <>
         <nav>
           <img src={logo} className="logo" alt="Logo" />
-<h1> SHREE BUDDHA BHAWANI SECONDARY SCHOOL <br/>
+{/* <h1> SHREE BUDDHA BHAWANI SECONDARY SCHOOL <br/>
 Khandadevi-6, Makadum
   
-</h1>
+</h1> */}
           <div>
             <ul id="navbar"
             className={this.state.clicked ? "#navbar active" :"#navbar"}
