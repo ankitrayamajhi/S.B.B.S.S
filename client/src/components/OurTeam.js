@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/css/OurTeamStyle.css';
+import Navbar from './Navbar';
 
 const staffData = [
   {
@@ -76,6 +77,8 @@ const staffData = [
 const OurTeam = () => {
   return (
     <div className="our-team-container">
+    <Navbar/>
+
       <div className="sec-title centered">
         <div className="title">Our Team</div>
         <div className="separator">

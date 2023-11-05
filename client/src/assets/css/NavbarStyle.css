@@ -1,111 +1,140 @@
 /* Erasing gap/margins */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-.App{
+.App {
   font-family: sans-serif;
   text-align: center;
 }
-/* css for navbar */
+
+/* CSS for navbar */
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background:beige;
-    padding: 20px 80px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: beige;
+  padding: 20px 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 100; /* Ensure it's on top */
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #251e1e;
+  transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #17cf97;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #17cf97;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#mobile {
+  display: none;
+}
+
+#mobile i {
+  color: #90cb50;
+  align-items: center;
+}
+
+/* Add this to your existing CSS */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: beige;
+  border: none;
+  padding: 10px;
+  z-index: 1;
+}
+
+#navbar li:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: beige;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 769px) {
   #navbar {
     display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #navbar li {
-    list-style: none;
-    padding: 0 20px;
-    position: relative;
-  }
-  
-  #navbar li a {
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #251e1e;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 119px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: beige;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
+    z-index: 101; /* Ensure it's on top */
   }
-  #navbar li a:hover,
-  #navbar li a.active {
-    color: #17cf97;
+
+  #navbar.active {
+    right: 0px;
   }
-  
-  #navbar li a:hover::after,
-  #navbar li a.active::after {
-    content: "";
-    width: 30%;
-    height: 2px;
-    background: #17cf97;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
+
+  #navbar li {
+    margin-bottom: 25px;
   }
-  
+
   #mobile {
-    display: none;
+    display: block;
   }
-  
+
   #mobile i {
-    color: #90cb50;
-    align-items: center;
-   
+    font-size: 24px;
+    cursor: pointer;
   }
-  
-  @media screen and (max-width: 769px) {
-    #navbar {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      position: fixed;
-      top: 119px;
-      right: -300px;
-      width:300px;
-      height:100vh;
-      background:beige;
-      box-shadow: 0 40px 60px rgb(0,0,0.1);
-      padding: 40px 0 0 10px;
-      transition:0.3s ease-in-out;
-    }
-  
-    #navbar.active {
-      right: 0px;
-    }
-  
-    #navbar li {
-      margin-bottom: 25px;
-    }
-  
-    #mobile {
-      display: block;
-    }
-  
-    #mobile i {
-      font-size: 24px;
-      cursor: pointer;
-    }
-  
-  }
- /* For small screens (e.g., mobile devices) */
+}
+
+/* For different screen sizes */
 .logo {
   width: 80px !important;
   height: 80px !important;
 }
 
-/* For medium screens (e.g., tablets) */
 @media (min-width: 768px) {
   .logo {
     width: 80px !important;
@@ -113,11 +142,9 @@ nav {
   }
 }
 
-/* For large screens (e.g., desktops) */
 @media (min-width: 1024px) {
   .logo {
     width: 150px !important;
     height: 150px !important;
   }
 }
-
