@@ -3,6 +3,7 @@ import logo from '../assets/img/logo.png';
 import '../assets/css/NavbarStyle.css';
 import { Link, useNavigate } from 'react-router-dom';
 
+
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
   const [newsDropdown, setNewsDropdown] = useState(false);
@@ -38,7 +39,7 @@ const Navbar = () => {
               <Link to="/AboutUs">About Us</Link>
             </li>
             <li>
-              <Link to="OurTeam">Our Team</Link>
+              <Link to="/OurTeam">Our Team</Link>
             </li>
             <li>
               <a

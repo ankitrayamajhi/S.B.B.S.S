@@ -1,21 +1,23 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import OurTeam from './components/OurTeam';
 import Home from './components/Home';
-import Footer from './components/Footer';
+import Notice from './components/Notice';
+import ResultCheck from './components/ResultCheck';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/OurTeam" element={<OurTeam />} />
-          {/* Add more routes for other pages */}
+          <Route path="/Notice" element={<Notice />} />
+          <Route path="/Results" element={<ResultCheck />} />
+
         </Routes>
-        <Footer />
+        
       </div>
     </Router>
   );
