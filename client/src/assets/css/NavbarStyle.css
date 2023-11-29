@@ -1,17 +1,5 @@
-/* Erasing gap/margins */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
-
 /* CSS for navbar */
-nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
