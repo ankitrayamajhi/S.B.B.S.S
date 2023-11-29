@@ -15,6 +15,7 @@ const Notice = () => {
   };
 
   return (
+    <div className='notice'>
     <div className={`popup-wrapper ${showPopup ? 'show' : 'hide'}`}>
       <div className="popup-box entry">
         <span className="close-btn" onClick={closePopup}>
@@ -37,6 +38,7 @@ const Notice = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
