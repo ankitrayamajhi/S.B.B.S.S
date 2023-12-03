@@ -2,6 +2,7 @@
 import school from '../assets/img/school.jpg';
 import "../assets/css/AboutStyle.css";
 import Course from './Course';
+import Testimonial from './Testimonial';
 function About() {
 
 
@@ -74,6 +75,7 @@ Come and be a part of Shree Buddha Bhawani Secondary School, where learning know
 	</div>
  </div>
 <Course/>
+<Testimonial/>
 </div>
 
 		

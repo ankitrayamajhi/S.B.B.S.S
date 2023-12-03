@@ -34,7 +34,7 @@
   color: white;
 }
 
-.whole,
+/* .whole,
 .left,
 .right {
  position: relative;
@@ -42,7 +42,7 @@
  padding-right: 5px;
  overflow: hidden; 
  float: left;
-}
+} */
 .whole {
   width: 100%;
 }
