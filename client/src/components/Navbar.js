@@ -33,10 +33,10 @@ const Navbar = () => {
             onClick={handleClick}
           >
             <li>
-              <Link to="/OurTeam">Home</Link>
+              <Link to="/Home">Home</Link>
             </li>
             <li>
-              <Link to="/AboutUs">About Us</Link>
+              <Link to="/About">About Us</Link>
             </li>
             <li>
               <Link to="/OurTeam">Our Team</Link>
