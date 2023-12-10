@@ -3,16 +3,23 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-body {
-	min-height: 100vh;
+.body {
+	/* min-height: 100vh;
 	display: grid;
 	place-items: center;
 	margin: 0;
-	padding: 0;
+	padding: 0;*/
     background-color: beige;
-	font-family: 'Martel Sans', sans-serif;
+	font-family: 'Martel Sans', sans-serif; 
 }
+.about-section{
+	min-height: 100vh;
+	background-color: beige;
+	margin: 0;
+	padding: 0;	
+	place-items: center;
 
+}
 
 /* Title */
 .sec-title .title {
