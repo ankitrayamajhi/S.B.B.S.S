@@ -21,7 +21,7 @@ const CourseItem = ({ title, startDate }) => {
 
 const CoursesContainer = () => {
   return (
-    <div>
+    <div className='course'>
     <div className="sec-title centered">
     <div className="title">+2 Courses We Offer</div>
     <div className="separator">
