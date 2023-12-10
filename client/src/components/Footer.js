@@ -2,7 +2,7 @@
 import '../assets/css/FooterStyle.css';
 const Footer = () => {
   return (
-    <div>
+    <div className='footer-container'>
      
         <footer className="footer-section">
           <div className="copyright-area">
