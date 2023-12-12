@@ -1,18 +1,17 @@
 
 import React from 'react';
+import '../assets/css/HomeStyle.css'
 import OurTeam from './OurTeam';
 import Contact from './Contact';
 import About from './About';
 
 const Home = () => {
   return (
-    <div>
+    <div className='home-section'>
       
       <About/>
       <br></br>
-    
 
-      <br></br>
       <OurTeam />
       <br></br>
     
