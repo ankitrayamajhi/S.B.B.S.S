@@ -1,4 +1,6 @@
-/* CSS for navbar */
+.navbar{
+  background-color: beige;
+}
 .nav {
   display: flex;
   align-items: center;
