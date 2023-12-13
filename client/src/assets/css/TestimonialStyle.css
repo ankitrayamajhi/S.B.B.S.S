@@ -307,7 +307,8 @@
   position: relative;
   width: 100%;
   margin-top: 10px;
-  height: 135px;
+  height: auto; /* Adjust the height based on content */
+  background-color: beige; /* Set the background color */
   -webkit-perspective: 10000px;
   -moz-perspective: 10000px;
   -ms-perspective: 10000px;
