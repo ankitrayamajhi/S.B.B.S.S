@@ -1,12 +1,11 @@
 import React from 'react';
 import '../assets/css/OurTeamStyle.css';
-import Navbar from './Navbar';
-
+import test from '../assets/img/test.jpg'
 const staffData = [
   {
     name: 'Ram Sharma',
     role: 'Principal',
-    image: 'https://1.bp.blogspot.com/-8c7QTLoyajs/YLjr2V6KYRI/AAAAAAAACO8/ViVPQpLWVM0jGh3RZhh-Ha1-1r3Oj62wQCNcBGAsYHQ/s16000/team-1-3.jpg',
+    image: test,
     socialLinks: {
       facebook: 'https://www.facebook.com/',
       instagram: 'https://www.instagram.com/',
@@ -77,7 +76,6 @@ const staffData = [
 const OurTeam = () => {
   return (
     <div className="our-team-container">
-  
 
       <div className="sec-title centered">
         <div className="title">Our Team</div>
@@ -85,7 +83,6 @@ const OurTeam = () => {
           <span></span>
         </div>
       </div>
-
       <div className="main">
         {staffData.map((staff, index) => (
           <div key={index} className="profile-card">

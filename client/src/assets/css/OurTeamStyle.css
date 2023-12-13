@@ -20,64 +20,6 @@
     align-items: center;
     flex-wrap: wrap;
 }
-
-/* Title */
-.sec-title .title {
-    position: relative;
-    font-size: 18px;
-    color: #17cf97;
-    font-weight: 700;
-    margin-bottom: 12px;
-    text-transform: capitalize;
-}
-
-.sec-title .separator {
-    position: relative;
-    width: 40px;
-    margin-top: 16px !important;
-}
-
-.sec-title .separator:before {
-    position: absolute;
-    content: '';
-    left: 0px;
-    top: 0px;
-    width: 10px;
-    height: 2px;
-    background-color: #abdfd1;
-}
-
-.sec-title .separator:after {
-    position: absolute;
-    content: '';
-    right: 0px;
-    top: 0px;
-    width: 10px;
-    height: 2px;
-    background-color: #abdfd1;
-}
-
-.sec-title .separator span {
-    position: absolute;
-    left: 50%;
-    top: -2px;
-    width: 10px;
-    height: 5px;
-    margin-left: -5px;
-    display: inline-block;
-    background-color: #17cf97;
-}
-
-.sec-title.centered .separator {
-    margin: 0 auto !important;
-    float: none !important;
-}
-
-.sec-title.centered {
-    text-align: center !important;
-}
-
-/* New container for Our Team section */
 .our-team-container {
     background-color: beige;
     width: 100%;
@@ -164,7 +106,7 @@
     color: #0c52a1;
 }
 
-/* Media query for smaller screens */
+/* Media query for smaller screens
 @media screen and (max-width: 768px) {
     .main {
         flex-direction: column;
@@ -174,4 +116,4 @@
     .profile-card {
         margin: 10px 0;
     }
-}
+} */
